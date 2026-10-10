@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Health &amp; Organic Growth | Demo for Lovina</title>
+<meta name="description" content="Interactive preview of WordPress site health, SEO page publishing, link outreach and KPI reporting, built around the job brief.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#060b16">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2322c39a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='%2303140e'%3ERJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/media/hero-poster.jpg">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><span class="brand-mark">RJ</span><span>Ricardo Jose<small>Website health &amp; organic growth</small></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#brief">Your brief</a>
+      <a href="#pages">SEO pages</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#health">Site health</a>
+      <a href="#links">Links</a>
+      <a href="#kpi">KPIs</a>
+      <a href="#pricing">Plan</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#pricing" class="btn btn-primary btn-sm">See the plan</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/media/hero-poster.jpg">
+      <source src="assets/media/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-grid"></div>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="chip reveal"><span class="dot"></span>Prepared for Lovina &nbsp;/&nbsp; SEO &amp; Website Developer (WordPress)</span>
+      <h1 class="reveal d1">A storefront that never breaks. <span class="grad">Organic growth you can check every Friday.</span></h1>
+      <p class="lead reveal d2">This is a working preview of how I would run your WordPress site health, SEO pages, links and reporting, built around the KPIs in your post. Everything below is clickable.</p>
+      <div class="hero-actions reveal d3">
+        <a href="#brief" class="btn btn-primary">Explore the demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#pricing" class="btn btn-ghost">See pricing &amp; milestones</a>
+      </div>
+      <div class="hero-proof reveal d3">
+        <div><b data-count="100">0</b><span>SEO pages a month, QA-checked</span></div>
+        <div><b>&lt; <span data-count="3">0</span>s</b><span>page load, Core Web Vitals green</span></div>
+        <div><b data-count="0">0</b><span>open technical warnings at week end</span></div>
+        <div><b><span data-count="24">0</span>h</b><span>max time anything stays broken</span></div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="stack" id="stack">
+        <div class="layer main">
+          <div class="layer-head"><b>Organic growth &nbsp;<span class="sub">Week 8 vs target</span></b><div class="dots3"><i></i><i></i><i></i></div></div>
+          <div class="mini-kpis">
+            <div><small>Sessions</small><b>5,940</b><em>+12%</em></div>
+            <div><small>Leads</small><b>121</b><em>+6%</em></div>
+            <div><small>Purchases</small><b>27</b><em>on target</em></div>
+          </div>
+          <svg class="mini-chart" viewBox="0 0 400 160" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c39a" stop-opacity=".45"/><stop offset="1" stop-color="#22c39a" stop-opacity="0"/></linearGradient>
+            </defs>
+            <g stroke="rgba(148,170,205,.12)" stroke-width="1"><line x1="0" y1="40" x2="400" y2="40"/><line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="120" x2="400" y2="120"/></g>
+            <path d="M0 122 L50 118 L100 120 L150 112 L200 100 L250 92 L300 74 L350 60 L400 42 L400 160 L0 160Z" fill="url(#mg)"/>
+            <path d="M0 122 L50 118 L100 120 L150 112 L200 100 L250 92 L300 74 L350 60 L400 42" fill="none" stroke="#22c39a" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M0 120 L400 120" stroke="#7d8ba3" stroke-width="1.5" stroke-dasharray="5 5"/>
+            <path d="M150 112 L400 64" stroke="#5b8cff" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="layer f1">
+          <div class="f-title">Page QA Gate</div>
+          <div class="f-big">25 / 25</div>
+          <div class="f-row"><span class="tick"></span>Schema valid</div>
+          <div class="f-row"><span class="tick"></span>One H1, primary keyword</div>
+          <div class="f-row"><span class="tick"></span>CTA + GA4 event firing</div>
+        </div>
+        <div class="layer f2">
+          <div class="f-title">Site health</div>
+          <div class="f-big">99.98%</div>
+          <div class="f-row"><span class="tick"></span>LCP 1.8s &nbsp;/&nbsp; INP 140ms</div>
+          <div class="f-row"><span class="tick"></span>Checkout + 6 forms passing</div>
+        </div>
+        <div class="layer f3">
+          <div class="f-title">Links live</div>
+          <div class="f-big">+6</div>
+          <div class="bar"><i style="width:64%"></i></div>
+          <div class="f-row">DR 30-50+, manual only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><i></i>Scroll</div>
+</section>
+
+<!-- ============ RIBBON ============ -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span><b>WordPress</b> core, theme, plugin updates on staging first</span>
+    <span><b>Rank Math</b> on every page</span>
+    <span><b>Google Search Console</b> warnings at zero</span>
+    <span><b>GA4</b> events verified</span>
+    <span><b>Ahrefs</b> site audit + link checks</span>
+    <span><b>Screaming Frog</b> weekly crawl</span>
+    <span><b>Gutenberg</b> native blocks, no page builders</span>
+    <span><b>Daily</b> written update</span>
+    <span><b>WordPress</b> core, theme, plugin updates on staging first</span>
+    <span><b>Rank Math</b> on every page</span>
+    <span><b>Google Search Console</b> warnings at zero</span>
+    <span><b>GA4</b> events verified</span>
+    <span><b>Ahrefs</b> site audit + link checks</span>
+    <span><b>Screaming Frog</b> weekly crawl</span>
+    <span><b>Gutenberg</b> native blocks, no page builders</span>
+    <span><b>Daily</b> written update</span>
+  </div>
+</div>
+
+<!-- ============ BRIEF ============ -->
+<section class="block" id="brief">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">01 &nbsp;Your brief</span><h2>Every line of your post, mapped to how it gets done.</h2></div>
+      <p class="reveal d1">I split your job post into four areas. Each requirement shows how I handle it and where you can see it working in this demo.</p>
+    </div>
+
+    <div class="brief reveal">
+      <div class="brief-side" id="briefTabs">
+        <button class="tab-btn active" data-tab="b1"><div><b>Site health</b><small>WordPress, speed, forms</small></div><span class="count">6/6</span></button>
+        <button class="tab-btn" data-tab="b2"><div><b>SEO &amp; growth</b><small>Pages, keywords, links</small></div><span class="count">6/6</span></button>
+        <button class="tab-btn" data-tab="b3"><div><b>Member publishing</b><small>Domains, DNS, SSL</small></div><span class="count">3/3</span></button>
+        <button class="tab-btn" data-tab="b4"><div><b>Reporting &amp; ownership</b><small>Updates, tools, decisions</small></div><span class="count">4/4</span></button>
+        <div class="coverage"><span>Requirements covered</span><b>19 / 19</b><div class="bar"><i style="width:100%"></i></div></div>
+      </div>
+
+      <div class="card card-pad">
+        <div class="req-panel active" id="b1">
+          <div class="req-list">
+            <div class="req"><span class="tick"></span><div class="q">Every page works on mobile, tablet and desktop</div><div class="a">Weekly sweep of all templates on 3 device sizes, daily monitor on key pages. Broken layouts, menus, images, links or forms get fixed the same day.</div><div class="w"><a class="where" href="#health">See monitor</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Test login, sign-up, password reset, order buttons, checkout and all forms</div><div class="a">End-to-end test run for every flow, with timing and a pass/fail log you can read.</div><div class="w"><a class="where" href="#health">Run tests</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Page speed under 3 seconds, Core Web Vitals green</div><div class="a">Image compression, caching, script cleanup. Speed is re-checked after every update, not once a month.</div><div class="w"><a class="where" href="#health">See vitals</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Updates on staging first, with a current backup, then live</div><div class="a">Fixed order every time: backup, staging, test, live, verify. Logged with time stamps.</div><div class="w"><a class="where" href="#updates">See pipeline</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Fix the same day or escalate with screenshot and page URL</div><div class="a">Every issue logged with screenshot, URL, browser and status. Nothing left open past 24 hours.</div><div class="w"><a class="where" href="#updates">See issue log</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Weekly cross-browser check</div><div class="a">Chrome, Safari, Firefox and Edge on desktop, tablet and mobile. Results in the Friday report.</div><div class="w"><a class="where" href="#health">See matrix</a></div></div>
+          </div>
+        </div>
+        <div class="req-panel" id="b2">
+          <div class="req-list">
+            <div class="req"><span class="tick"></span><div class="q">100 SEO-optimized templated pages a month, 25 a week</div><div class="a">Built through your page generator and master template. Every page passes the QA Gate before it goes live. Template upkeep included.</div><div class="w"><a class="where" href="#pages">Try QA Gate</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Keyword research: long-tail, intent-driven, clustered</div><div class="a">Clusters built in Ahrefs, one primary keyword per page, no two pages competing for the same term.</div><div class="w"><a class="where" href="#keywords">See clusters</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Quality backlinks, DR 30-50+, manual outreach</div><div class="a">Resource pages, guest articles, broken link and unlinked mention outreach. No PBNs, farms, spam directories or paid networks.</div><div class="w"><a class="where" href="#links">See tracker</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">GSC, GA4, Ahrefs and Screaming Frog warnings at zero</div><div class="a">Weekly crawl and audit. Redirects, 404s, indexing, schema and speed fixed within the same week.</div><div class="w"><a class="where" href="#technical">See warnings</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Value proposition, benefit H1, CTA, trust elements, event tracking</div><div class="a">Built into the master template and checked on every page by the QA Gate.</div><div class="w"><a class="where" href="#pages">See template</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">30-day baseline, targets, then baseline vs target vs actual</div><div class="a">Baseline for sessions, leads, registrations, purchases and conversion rate. Targets go to you for approval.</div><div class="w"><a class="where" href="#kpi">See dashboard</a></div></div>
+          </div>
+        </div>
+        <div class="req-panel" id="b3">
+          <div class="req-list">
+            <div class="req"><span class="tick"></span><div class="q">Own customer publishing requests from intake to completion</div><div class="a">One checklist per request: domain, DNS, SSL, publish, test layouts, forms and links, then confirm with the customer.</div><div class="w"><a class="where" href="#launch">Run checker</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Staging builds and customer DNS updates</div><div class="a">Staging first, DNS records verified before and after the switch, SSL confirmed live.</div><div class="w"><a class="where" href="#launch">See steps</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Quick pages and micro-sites in native Gutenberg</div><div class="a">Native blocks and patterns only, no third-party page builders. Same QA and speed rules as the main site.</div><div class="w"><a class="where" href="#pages">See layout</a></div></div>
+          </div>
+        </div>
+        <div class="req-panel" id="b4">
+          <div class="req-list">
+            <div class="req"><span class="tick"></span><div class="q">Short written update every day</div><div class="a">Done today, issues found, fixed or escalated, plan for tomorrow. Same format every day.</div><div class="w"><a class="where" href="#reports">See sample</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Acquisition report Friday, keyword report Monday</div><div class="a">Baseline vs target vs actual, pages, links, warnings and speed. Keyword report with the week's 25 primary terms.</div><div class="w"><a class="where" href="#reports">See reports</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">Own routine fixes, escalate only access, budget, security or platform</div><div class="a">Escalations come with evidence and a recommended next step, so you only make the decision.</div><div class="w"><a class="where" href="#updates">See example</a></div></div>
+            <div class="req"><span class="tick"></span><div class="q">WordPress, Rank Math, GSC, GA4, Ahrefs, Screaming Frog, your SEO dashboard</div><div class="a">Daily tools. Your internal keyword pipeline, page generator and rank tracker stay the source of truth.</div><div class="w"><a class="where" href="#technical">See tools</a></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGES + QA ============ -->
+<section class="block" id="pages">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">02 &nbsp;SEO pages</span><h2>25 pages a week, and none go live without passing QA.</h2></div>
+      <p class="reveal d1">Pick a sample page, switch devices, then run the QA Gate. It checks the SEO basics and the conversion pieces you asked for: benefit H1, value proposition, CTA, trust elements and tracking.</p>
+    </div>
+
+    <div class="pages-grid">
+      <div class="card card-pad reveal">
+        <div class="card-head">
+          <div class="page-picker" id="pagePicker"></div>
+          <div class="seg" id="deviceSeg">
+            <button class="active" data-d="desktop">Desktop</button>
+            <button data-d="tablet">Tablet</button>
+            <button data-d="mobile">Mobile</button>
+          </div>
+        </div>
+        <div class="device-stage">
+          <div class="device" id="device">
+            <div class="browser-bar"><div class="dots3"><i></i><i></i><i></i></div><div class="url" id="spUrl">yourbrand.com</div></div>
+            <div class="sp" id="spBody"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad reveal d1">
+        <div class="card-head">
+          <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span>Page QA Gate</h3>
+          <button class="btn btn-primary btn-sm" id="qaRun">Run QA</button>
+        </div>
+        <div class="qa-list" id="qaList"></div>
+        <div class="qa-result" id="qaResult"><div><b id="qaScore">Ready</b><div class="qa-note" id="qaNote">Press Run QA to check this page.</div></div><span class="chip" id="qaChip">Not checked</span></div>
+      </div>
+    </div>
+
+    <div class="weekbar reveal">
+      <div><small>Week 1</small><b>25 / 25</b><div class="bar"><i style="width:100%"></i></div></div>
+      <div><small>Week 2</small><b>25 / 25</b><div class="bar"><i style="width:100%"></i></div></div>
+      <div><small>Week 3</small><b>25 / 25</b><div class="bar"><i style="width:100%"></i></div></div>
+      <div><small>Week 4</small><b>25 / 25</b><div class="bar"><i style="width:100%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEYWORDS ============ -->
+<section class="block" id="keywords">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">03 &nbsp;Keyword research</span><h2>Clusters, not lists. One primary keyword per page.</h2></div>
+      <p class="reveal d1">Each hub is a topic cluster. The points around it are long-tail keywords, and each one gets its own page. Drag to rotate, and click a cluster to see its part of the Monday keyword report.</p>
+    </div>
+
+    <div class="kw-grid">
+      <div class="card kw-stage reveal" id="kwStage">
+        <div class="kw-overlay"><span>Drag to rotate</span><span class="chip sample">Sample data</span></div>
+      </div>
+      <div class="card card-pad reveal d1">
+        <div class="kw-legend" id="kwLegend"></div>
+        <div class="table-scroll">
+          <table class="t" id="kwTable">
+            <thead><tr><th>Primary keyword</th><th>Intent</th><th class="num">Vol.</th><th class="num">KD</th><th>Page</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HEALTH ============ -->
+<section class="block" id="health">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">04 &nbsp;Site health</span><h2>Problems found before your customers find them.</h2></div>
+      <p class="reveal d1">Uptime, Core Web Vitals, end-to-end tests of every money flow, and a weekly browser matrix. This is what the site health side of the job looks like each week.</p>
+    </div>
+
+    <div class="health-grid">
+      <div class="card card-pad span-4 reveal tilt">
+        <div class="card-head"><h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span>Uptime</h3><span class="chip"><span class="dot"></span>Live</span></div>
+        <div class="big-num pop">99.98<small>%</small></div>
+        <div class="sub">Last 30 days, checked every minute</div>
+        <div class="uptime-bars" id="uptimeBars"></div>
+        <div class="up-rows">
+          <div><span>Avg. server response</span><b>412 ms</b></div>
+          <div><span>Incidents</span><b>1 (4 min, resolved)</b></div>
+          <div><span>Last backup</span><b>today 03:00</b></div>
+        </div>
+      </div>
+
+      <div class="card card-pad span-8 reveal d1">
+        <div class="card-head"><h3><span class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 13l4-4M12 3v2"/></svg></span>Core Web Vitals &amp; load time</h3><span class="chip sample">Sample data</span></div>
+        <div class="gauges" id="gauges"></div>
+        <div class="load-meter">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;gap:10px;flex-wrap:wrap"><b>Full page load (mobile, key pages avg.)</b><span class="mono" style="color:var(--green)"><span id="loadVal">0.0</span>s &nbsp;/ target &lt; 3s</span></div>
+          <div class="load-track"><span class="load-pin" id="loadPin"></span></div>
+          <div class="load-scale"><span>0s</span><span>1.5s</span><span>3s</span><span>4.5s</span><span>6s</span></div>
+        </div>
+      </div>
+
+      <div class="card card-pad span-7 reveal">
+        <div class="card-head"><h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg></span>End-to-end flow tests</h3><button class="btn btn-ghost btn-sm" id="testRun">Run all tests</button></div>
+        <div class="tests" id="tests"></div>
+      </div>
+
+      <div class="card card-pad span-5 reveal d1">
+        <div class="card-head"><h3><span class="icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Weekly browser check</h3></div>
+        <div class="table-scroll">
+          <table class="matrix">
+            <thead><tr><th></th><th>Desktop</th><th>Tablet</th><th>Mobile</th></tr></thead>
+            <tbody>
+              <tr><td>Chrome</td><td><span class="tick"></span></td><td><span class="tick"></span></td><td><span class="tick"></span></td></tr>
+              <tr><td>Safari</td><td><span class="tick"></span></td><td><span class="tick"></span></td><td class="warn"><span>fixed 2:40pm</span></td></tr>
+              <tr><td>Firefox</td><td><span class="tick"></span></td><td><span class="tick"></span></td><td><span class="tick"></span></td></tr>
+              <tr><td>Edge</td><td><span class="tick"></span></td><td><span class="tick"></span></td><td><span class="tick"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sub" style="margin-top:10px">12 combinations, every week, in the Friday report.</p>
+      </div>
+
+      <div class="card card-pad span-12 reveal" id="updates">
+        <div class="card-head"><h3><span class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span>Safe updates: the same order, every time</h3><span class="chip">WordPress 6.x core + 3 plugins</span></div>
+        <div class="pipeline">
+          <div class="pipe ok"><small>09:05 &nbsp;done</small><b>1. Backup</b><span>Full files + database, stored off-site</span></div>
+          <div class="pipe ok"><small>09:12 &nbsp;done</small><b>2. Staging</b><span>Updates applied on the staging copy</span></div>
+          <div class="pipe ok"><small>09:30 &nbsp;done</small><b>3. Test</b><span>Flows, layouts, speed, error log</span></div>
+          <div class="pipe ok"><small>10:02 &nbsp;done</small><b>4. Live</b><span>Applied in a low-traffic window</span></div>
+          <div class="pipe ok"><small>10:10 &nbsp;done</small><b>5. Verify</b><span>Tests re-run on live, logged</span></div>
+        </div>
+        <div style="height:22px"></div>
+        <div class="escalate">
+          <div class="shot"><div class="bb"></div><div class="ln m"></div><div class="ln s"></div><div class="ln"></div><div class="btnx"></div><div class="ring"></div></div>
+          <div class="log">
+            <p><span class="pill g">Fixed same day</span> &nbsp;<b>Issue #014</b> &nbsp;<span class="sub">Tue 11:20 found &nbsp;/ 2:40pm fixed</span></p>
+            <p><b>What:</b> "Start now" button on the pricing page not tappable on iPhone Safari. A sticky banner was covering it.</p>
+            <p><b>Where:</b> <span class="mono">yourbrand.com/pricing/</span> &nbsp;iOS 18, Safari, 390px</p>
+            <p><b>Fix:</b> Adjusted banner z-index and bottom spacing, retested on Safari, Chrome and Edge mobile. Screenshot before and after in the daily update.</p>
+            <p class="sub">If a fix needs access, budget, security or a platform decision, it comes to you with the same evidence and a recommended next step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNICAL ============ -->
+<section class="block" id="technical" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">05 &nbsp;Technical SEO</span><h2>Zero open warnings at the end of every week.</h2></div>
+      <p class="reveal d1">Each tool's warning count from the first audit down to zero. The same four tools you listed, checked every week.</p>
+    </div>
+    <div class="tech-grid" id="techGrid"></div>
+    <div class="fixes reveal">
+      <div class="fix"><b data-count="38">0</b><span>Redirect chains and loops fixed</span></div>
+      <div class="fix"><b data-count="61">0</b><span>404s redirected or restored</span></div>
+      <div class="fix"><b data-count="24">0</b><span>Indexing issues resolved in GSC</span></div>
+      <div class="fix"><b data-count="17">0</b><span>Schema errors fixed (Rank Math)</span></div>
+      <div class="fix"><b data-count="9">0</b><span>Slow templates sped up</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LINKS ============ -->
+<section class="block" id="links">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">06 &nbsp;Link building</span><h2>Manual outreach. Every link logged and audit-ready.</h2></div>
+      <p class="reveal d1">The full outreach pipeline from prospect to live link. Each live link is re-checked weekly to make sure it is still up and dofollow, so the monthly count is one you can trust.</p>
+    </div>
+
+    <div class="link-stats">
+      <div class="card lstat reveal"><small>Prospects (DR 30-50+)</small><b data-count="420">0</b><div class="bar"><i style="width:100%"></i></div></div>
+      <div class="card lstat reveal d1"><small>Personal pitches sent</small><b data-count="180">0</b><div class="bar"><i style="width:43%"></i></div></div>
+      <div class="card lstat reveal d2"><small>Replies</small><b data-count="26">0</b><div class="bar"><i style="width:14%"></i></div></div>
+      <div class="card lstat reveal d3"><small>Live links this month</small><b data-count="14">0</b><div class="bar"><i style="width:8%"></i></div></div>
+    </div>
+
+    <div class="kanban reveal" id="kanban"></div>
+
+    <div class="card card-pad reveal">
+      <div class="card-head"><h3><span class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>Live link audit</h3><span class="chip sample">Sample data</span></div>
+      <div class="table-scroll">
+        <table class="t" id="auditTable">
+          <thead><tr><th>Linking page</th><th class="num">DR</th><th>Anchor</th><th>Type</th><th>Live since</th><th>Weekly check</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div style="height:18px"></div>
+      <div class="rules">
+        <span class="rule yes">Manual outreach only</span>
+        <span class="rule yes">Relevant sites, DR 30-50+</span>
+        <span class="rule no">No PBNs</span>
+        <span class="rule no">No link farms</span>
+        <span class="rule no">No spam directories</span>
+        <span class="rule no">No paid link networks</span>
+        <span class="rule yes">Paid placement only with your written OK</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KPI ============ -->
+<section class="block" id="kpi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">07 &nbsp;KPI dashboard</span><h2>Baseline vs target vs actual. Every Friday, and live any day.</h2></div>
+      <p class="reveal d1">Weeks 1-4 set the baseline. Targets start from week 5 once you approve them. Click a metric to switch the chart.</p>
+    </div>
+    <div class="kpi-cards reveal" id="kpiCards"></div>
+    <div class="card card-pad reveal">
+      <div class="card-head">
+        <div class="legend"><span><i style="background:#22c39a"></i>Actual</span><span><i style="background:#5b8cff"></i>Approved target</span><span><i class="dash"></i>Baseline</span></div>
+        <span class="chip sample">Sample data</span>
+      </div>
+      <div class="chart-wrap"><canvas id="kpiChart"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAUNCH KIT ============ -->
+<section class="block" id="launch">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">08 &nbsp;Member website publishing</span><h2>Every customer site goes live the same way.</h2></div>
+      <p class="reveal d1">From intake to the customer saying "looks great". Run the launch check on a sample member site to see each step get verified.</p>
+    </div>
+    <div class="launch-grid">
+      <div class="card card-pad reveal">
+        <div class="card-head"><h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>Launch check</h3></div>
+        <div class="checker-input">
+          <div class="field"><span>https://</span>member-bakery.example</div>
+          <button class="btn btn-primary" id="launchRun">Run launch check</button>
+        </div>
+        <div class="table-scroll records">
+          <table class="t">
+            <thead><tr><th>Record</th><th>Host</th><th>Value</th><th>Status</th></tr></thead>
+            <tbody id="dnsBody">
+              <tr><td>A</td><td>@</td><td class="mono">203.0.113.24</td><td><span class="pill a" data-rec>Waiting</span></td></tr>
+              <tr><td>CNAME</td><td>www</td><td class="mono">member-bakery.example</td><td><span class="pill a" data-rec>Waiting</span></td></tr>
+              <tr><td>TXT</td><td>@</td><td class="mono">site-verification</td><td><span class="pill a" data-rec>Waiting</span></td></tr>
+              <tr><td>SSL</td><td>*</td><td class="mono">Let's Encrypt, 90 days</td><td><span class="pill a" data-rec>Waiting</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="confirm">
+          <small>Completion message to the customer</small>
+          <p>Hi Sam, your site is live at member-bakery.example with SSL active.</p>
+          <p>I tested every page on desktop, tablet and mobile, plus the contact and order forms. All working. Let me know if you want any changes.</p>
+        </div>
+      </div>
+      <div class="card card-pad reveal d1">
+        <div class="steps-v" id="launchSteps"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK BAND (video) ============ -->
+<section class="band" id="reports-intro">
+  <video id="workVideo" muted loop playsinline preload="none" poster="assets/media/work-poster.jpg" data-src="assets/media/work.mp4"></video>
+  <div class="wrap">
+    <div class="reveal" style="max-width:720px">
+      <span class="eyebrow">09 &nbsp;How I work</span>
+      <h2 style="margin-top:14px">Fixed hours. Written updates. You never have to chase me.</h2>
+      <p class="lead" style="margin-top:16px">Everything in writing, on a schedule you can set your watch by, with a weekly checklist you sign off.</p>
+    </div>
+    <div class="rhythm">
+      <div class="rh reveal"><small>Every day</small><b>Short update</b><p>Done today, issues found, fixed or escalated, plan for tomorrow.</p></div>
+      <div class="rh reveal d1"><small>Monday</small><b>Keyword report</b><p>New clusters, the week's 25 primary keywords, ranking movement.</p></div>
+      <div class="rh reveal d2"><small>Friday</small><b>Acquisition report</b><p>Baseline vs target vs actual, pages, links, warnings, speed.</p></div>
+      <div class="rh reveal d3"><small>Every week</small><b>Signed checklist</b><p>Every listed task ticked with proof, ready for your review.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPORTS ============ -->
+<section class="block" id="reports" style="padding-top:60px">
+  <div class="wrap">
+    <div class="reports">
+      <div class="msg reveal">
+        <div class="msg-head"><span class="avatar">RJ</span><div><b>Daily update</b><small>Tue, week 3 &nbsp;/ 5:52 PM</small></div></div>
+        <p class="tagline">Done today</p>
+        <ul>
+          <li>Published 5 pages (LLC cluster, Texas to Ohio). All passed QA.</li>
+          <li>Fixed 3 redirect chains from the old /services/ URLs.</li>
+          <li>Checkout tested on Chrome, Safari, Firefox, Edge. All good.</li>
+          <li>Sent 12 outreach pitches, 2 replies, 1 link live (DR 41).</li>
+        </ul>
+        <p class="tagline">Issues</p>
+        <ul><li>Pricing page button not tappable on iPhone Safari. Fixed 2:40 PM, retested, screenshots attached.</li></ul>
+        <p class="tagline">Escalated</p>
+        <ul><li>None today.</li></ul>
+        <p class="tagline">Tomorrow</p>
+        <ul><li>5 pages (business plan cluster), outreach follow-ups, LCP work on /pricing/.</li></ul>
+      </div>
+
+      <div class="card card-pad reveal d1">
+        <div class="card-head">
+          <div class="seg report-tabs" id="repTabs"><button class="active" data-r="fri">Friday acquisition</button><button data-r="mon">Monday keywords</button></div>
+          <span class="chip sample">Sample data</span>
+        </div>
+        <div class="rep active" id="rep-fri">
+          <div class="vs">
+            <div><small>Organic sessions</small><b>5,940</b><em>+12% vs target</em></div>
+            <div><small>Leads</small><b>121</b><em>+6% vs target</em></div>
+            <div><small>Registrations</small><b>74</b><em>+4% vs target</em></div>
+            <div><small>Purchases</small><b>27</b><em>on target</em></div>
+          </div>
+          <table class="t">
+            <thead><tr><th>This week</th><th class="num">Result</th><th class="num">Goal</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>SEO pages published</td><td class="num">25</td><td class="num">25</td><td><span class="pill g">Done</span></td></tr>
+              <tr><td>Quality links live</td><td class="num">6</td><td class="num">set in week 4</td><td><span class="pill b">Tracking</span></td></tr>
+              <tr><td>Open technical warnings</td><td class="num">0</td><td class="num">0</td><td><span class="pill g">Done</span></td></tr>
+              <tr><td>Avg. page load (mobile)</td><td class="num">2.1s</td><td class="num">&lt; 3s</td><td><span class="pill g">Done</span></td></tr>
+              <tr><td>Issues open past 24h</td><td class="num">0</td><td class="num">0</td><td><span class="pill g">Done</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rep" id="rep-mon">
+          <table class="t">
+            <thead><tr><th>Cluster</th><th class="num">Pages this week</th><th class="num">Top-10 terms</th><th>Mover</th></tr></thead>
+            <tbody>
+              <tr><td>Start an LLC by state</td><td class="num">10</td><td class="num">31</td><td><span class="pill g">+4 positions</span></td></tr>
+              <tr><td>Business plan templates</td><td class="num">6</td><td class="num">12</td><td><span class="pill g">+7 positions</span></td></tr>
+              <tr><td>EIN &amp; tax ID</td><td class="num">4</td><td class="num">9</td><td><span class="pill b">new</span></td></tr>
+              <tr><td>Business licenses</td><td class="num">3</td><td class="num">6</td><td><span class="pill g">+2 positions</span></td></tr>
+              <tr><td>Business banking</td><td class="num">2</td><td class="num">3</td><td><span class="pill a">watch</span></td></tr>
+            </tbody>
+          </table>
+          <p class="sub" style="margin-top:12px">25 primary keywords assigned, no overlaps with existing pages (checked against the rank tracker).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 30 DAYS ============ -->
+<section class="block" id="plan30" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><span class="eyebrow">10 &nbsp;First 30 days</span><h2>From access to approved targets in four weeks.</h2></div>
+      <p class="reveal d1">Pages and fixes start in week 1. By the end of week 4 you have a documented baseline and growth targets to approve.</p>
+    </div>
+    <div class="timeline">
+      <div class="wk reveal"><span class="node">W1</span><div class="card wk-card"><small>Audit &amp; quick wins</small><h3>Know the site</h3><ul><li>Access, backups and staging confirmed</li><li>Full crawl: GSC, GA4, Ahrefs, Screaming Frog</li><li>Critical fixes live</li><li>First 25 pages after template sign-off</li></ul></div></div>
+      <div class="wk reveal d1"><span class="node">W2</span><div class="card wk-card"><small>Tracking &amp; speed</small><h3>Measure right</h3><ul><li>GA4 events verified: leads, sign-ups, purchases</li><li>Speed work on the slowest key pages</li><li>Outreach list built, first pitches out</li><li>25 pages published</li></ul></div></div>
+      <div class="wk reveal d2"><span class="node">W3</span><div class="card wk-card"><small>Clean up &amp; scale</small><h3>Zero warnings</h3><ul><li>Technical warnings driven to zero</li><li>Conversion review on top pages</li><li>Outreach running daily</li><li>25 pages published</li></ul></div></div>
+      <div class="wk reveal d3"><span class="node">W4</span><div class="card wk-card"><small>Baseline &amp; targets</small><h3>Lock the numbers</h3><ul><li>100 pages live for the month</li><li>Baseline: sessions, leads, registrations, purchases, CR</li><li>Weekly and monthly targets for your approval</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="block" id="pricing">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="reveal"><span class="eyebrow">11 &nbsp;Plan &amp; pricing</span><h2>Two ways to start. Same standards.</h2></div>
+      <p class="reveal d1">Option A is your job post as written. Option B adds five tools I build in the first month. You keep them, and they make the KPIs easier to hit and easier to check.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="card plan reveal tilt">
+        <small class="name">Option A</small>
+        <h3>Core Plan</h3>
+        <div class="price pop">$450<small>/ month</small></div>
+        <p class="then">Everything in your job post.</p>
+        <ul>
+          <li><span class="tick"></span>WordPress site health, updates, speed, forms, browser checks</li>
+          <li><span class="tick"></span>25 SEO pages a week, keyword research, template upkeep</li>
+          <li><span class="tick"></span>Manual link outreach, technical SEO, conversion work</li>
+          <li><span class="tick"></span>Member site publishing, DNS and SSL</li>
+          <li><span class="tick"></span>Daily update, Monday and Friday reports, weekly checklist</li>
+          <li><span class="tick"></span>One monthly milestone, released after your 4-week review</li>
+        </ul>
+      </div>
+      <div class="card plan rec reveal d1 tilt">
+        <span class="chip ribbon-tag" style="color:var(--green);border-color:rgba(34,195,154,.5)"><span class="dot"></span>Recommended</span>
+        <small class="name">Option B</small>
+        <h3>Growth Plan</h3>
+        <div class="price pop">$650<small>first month</small></div>
+        <p class="then">Then $450 / month. Everything in Core, plus:</p>
+        <ul>
+          <li class="plus"><span class="tick"></span>Page QA Gate on every generated page</li>
+          <li class="plus"><span class="tick"></span>Live KPI dashboard on GSC + GA4</li>
+          <li class="plus"><span class="tick"></span>Daily site health monitor with alerts</li>
+          <li class="plus"><span class="tick"></span>Link outreach tracker with live-link checks</li>
+          <li class="plus"><span class="tick"></span>Member site launch kit with DNS / SSL checker</li>
+          <li><span class="tick"></span>4 weekly milestones, each released after your review</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card-pad reveal">
+      <div class="card-head"><h3>Option B milestones</h3><span class="chip">4 weeks, then $450 / month</span></div>
+      <div class="table-scroll">
+        <table class="t ms-table">
+          <thead><tr><th>Week</th><th>Delivered</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Access, full audit and fix list, backups and staging confirmed, Page QA Gate live, first 25 pages</td><td>$150</td></tr>
+            <tr><td>2</td><td>Live KPI dashboard, GA4 event tracking verified, speed fixes, 25 pages</td><td>$150</td></tr>
+            <tr><td>3</td><td>Site health monitor and link outreach tracker live, warnings at zero, 25 pages</td><td>$150</td></tr>
+            <tr><td>4</td><td>Member site launch kit, 100 pages total, 30-day baseline and targets for approval</td><td>$200</td></tr>
+            <tr class="total"><td>Total</td><td>First month</td><td>$650</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="next">
+      <div class="reveal"><small>STEP 1</small><b>Pick A or B</b><span>Reply in our chat with the letter.</span></div>
+      <div class="reveal d1"><small>STEP 2</small><b>Paid test task</b><span>Set it as a milestone, I start the same day.</span></div>
+      <div class="reveal d2"><small>STEP 3</small><b>Access</b><span>A WordPress user for me, viewer access to GSC, GA4, Ahrefs.</span></div>
+      <div class="reveal d3"><small>STEP 4</small><b>Week 1 starts</b><span>First daily update the same evening.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready when you are</span>
+    <h2 class="reveal d1">One person who owns the site <span class="grad">and the growth.</span></h2>
+    <p class="reveal d2">I can start the paid test task the same day you set the milestone in our Freelancer chat.</p>
+    <div class="hero-actions reveal d3">
+      <a href="#pricing" class="btn btn-primary">Back to the plan</a>
+      <a href="#top" class="btn btn-ghost">Back to top</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Demo prepared for Lovina by Ricardo Jose. All numbers shown are sample data for illustration.</span>
+    <span>Stock video: Mixkit</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script type="module" src="assets/js/keywords3d.js"></script>
+</body>
+</html>
